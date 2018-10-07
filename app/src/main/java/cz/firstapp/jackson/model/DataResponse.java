@@ -1,35 +1,8 @@
 package cz.firstapp.jackson.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-import java.util.ArrayList;
-
 public class DataResponse {
-    public ArrayList<Initial_screen> getData;
-
-    /*{
-    "status": "OK",
-    "actual_version": 0.01,
-    "configuartion": {
-        "initial_screen": [
-        {
-            "color": "#0000ff",
-                "text": "software",
-                "icon": "data:image/png;base64,iVBORw0KGgoAAAA */
-
-
-    @SerializedName("status")
-    @Expose
     private String status;
-
-
-    @SerializedName("actual_version")
-    @Expose
     private float actual_version;
-
-    @SerializedName("configuartion")
-    @Expose
     private Configuartion configuartion;
 
     public String getStatus() {
