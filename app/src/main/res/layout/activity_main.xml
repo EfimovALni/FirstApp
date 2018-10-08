@@ -68,7 +68,7 @@
                     android:id="@+id/tv_showDecriptJSON"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Here will be decripted JSON" />
+                    />
 
                 <Button
                     android:id="@+id/b_version"

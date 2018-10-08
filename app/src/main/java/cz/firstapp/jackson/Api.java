@@ -1,5 +1,6 @@
 package cz.firstapp.jackson;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
@@ -16,7 +17,7 @@ public interface Api {
     //    Method for get info by POST ("@FormUrlEncoded" + "@POST") + body like a "@File" - use OBLIGATORY!
     @FormUrlEncoded
     @POST("DAN/ajaxData.php")
-    Call<JSONObject> getData(@FieldMap Map<String, String> fields);
+    Call<JsonObject> getData(@FieldMap Map<String, String> fields);
 
 
 
